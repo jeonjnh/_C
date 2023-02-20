@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_33_Search_in_Rotated_Sorted_Array.py"
+entrypoint = "No_108_Convert_Sorted_Array_to_Binary_Search_Tree.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
