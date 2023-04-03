@@ -20,11 +20,14 @@ Input: people = [3,5,3,4], limit = 5
 Output: 4
 Explanation: 4 boats (3), (3), (4), (5)
 """
+
+
 class Solution:
+
   def numRescueBoats(self, people: list[int], limit: int) -> int:
     ans = 0
     people.sort()
-    l, r = 0, len(people)-1
+    l, r = 0, len(people) - 1
 
     while l <= r:
       #print(l,r,ans)
@@ -35,8 +38,15 @@ class Solution:
 
     return ans
 
+
 # Test Case 1
-people = [3,2,2,1]
+people = [3, 2, 2, 1]
 limit = 3
-ans = Solution().numRescueBoats(people,limit)
-print("expected: 3, output:",ans)
+ans = Solution().numRescueBoats(people, limit)
+print("expected: 3, output:", ans)
+
+# Test Case 2
+people = [3, 5, 3, 4]
+limit = 5
+ans = Solution().numRescueBoats(people, limit)
+print("expected: 3, output:", ans)
