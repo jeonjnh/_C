@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_1281_Subtract_the_Product_and_Sum_of_Digits_of_an_Integer.py"
+entrypoint = "No_1779_Find_Nearest_Point_That_Has_the_Same_X_or_Y_Coordinate.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
