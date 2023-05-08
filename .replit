@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_1964_Find_the_Longest_Valid_Obstacle_Course_at_Each_Position.py"
+entrypoint = "No_414_Third_Maximum_Number.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
