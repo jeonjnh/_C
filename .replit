@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_338_Counting_Bits.py"
+entrypoint = "No_1679_Max_Number_of_K_Sum_Pairs.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
