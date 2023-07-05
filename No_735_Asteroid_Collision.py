@@ -26,7 +26,8 @@ Output: [10]
 Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 """
 
-
+# Wrong Answer
+"""
 class Solution:
 
   def asteroidCollision(self, asteroids: list[int]) -> list[int]:
@@ -52,13 +53,45 @@ class Solution:
         stack.append(val_1)
 
     return stack
+"""
+
+
+class Solution:
+
+  def asteroidCollision(self, asteroids: list[int]) -> list[int]:
+    stack = []
+    i = 0
+
+    while i < len(asteroids) and asteroids[i] < 0:
+      stack.append(asteroids[i])
+      i += 1
+
+    while i < len(asteroids):
+      if asteroids[i] < 0:
+        while stack and stack[-1] > 0:
+          if stack[-1] < -asteroids[i]:
+            stack.pop()
+          elif stack[-1] == -asteroids[i]:
+            stack.pop()
+            break
+          else:
+            break
+        else:
+          stack.append(asteroids[i])
+      else:
+        stack.append(asteroids[i])
+
+      i += 1
+
+    return stack
+
 
 # Test Case
-asteroids = [5,10,-5]
+asteroids = [5, 10, -5]
 ans = Solution().asteroidCollision(asteroids)
-print("expected: [5,10], output:",ans)
+print("expected: [5,10], output:", ans)
 
 # Test Case
-asteroids = [-2,-1,1,2]
+asteroids = [-2, -1, 1, 2]
 ans = Solution().asteroidCollision(asteroids)
-print("expected: [-2,-1,1,2], output:",ans)
+print("expected: [-2,-1,1,2], output:", ans)
