@@ -55,6 +55,7 @@ class MyQueue:
     return not self.s1
 """
 # Approach #2 (Two Stacks) Push - O(1)O(1)O(1) per operation, Pop - Amortized O(1)O(1)O(1) per operation.
+"""
 class MyQueue:
 
   def __init__(self):
@@ -79,7 +80,34 @@ class MyQueue:
 
   def empty(self) -> bool:
     return not self.s1 and not self.s2
+"""
 
+# Approach #3 (Two Stacks) Push
+class MyQueue:
+
+  def __init__(self):
+      self.s1 = []
+      self.s2 = []
+  
+  
+  def push(self, x: int) -> None:
+      while self.s1:
+          self.s2.append(self.s1.pop())
+      self.s1.append(x)
+      while self.s2:
+          self.s1.append(self.s2.pop())
+  
+  
+  def pop(self) -> int:
+      return self.s1.pop()
+  
+  
+  def peek(self) -> int:
+      return self.s1[-1]
+  
+  
+  def empty(self) -> bool:
+      return not self.s1
 
 myQueue = MyQueue();
 myQueue.push(1); 
