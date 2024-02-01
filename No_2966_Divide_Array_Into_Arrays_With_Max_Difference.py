@@ -35,3 +35,10 @@ class Solution:
       ans.append(nums[i:i + 3])
 
     return ans
+
+nums = [1,3,4,8,7,9,3,5,1]
+k = 2
+output = [[1,1,3],[3,4,5],[7,8,9]]
+ans = Solution().divideArray(nums, k)
+print("expected: ",output)
+print("result: ", ans)
