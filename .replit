@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_442_Find_All_Duplicates_in_an_Array.py"
+entrypoint = "No_1614_Maximum_Nesting_Depth_of_the_Parentheses.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
