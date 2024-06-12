@@ -13,14 +13,10 @@ Example 2:
 Input: nums = [2,0,1]
 Output: [0,1,2]
 """
-
-
+"""
 class Solution:
 
   def sortColors(self, nums: list[int]) -> None:
-    """
-    Do not return anything, modify nums in-place instead.
-    """
 
     low = 0
     mid = 0
@@ -40,6 +36,25 @@ class Solution:
     temp = nums[i]
     nums[i] = nums[j]
     nums[j] = temp
+"""
+
+
+class Solution:
+
+  def sortColors(self, nums: list[int]) -> None:
+    """
+      Do not return anything, modify nums in-place instead.
+      """
+    cnt = [0] * 3
+    for n in nums:
+      cnt[n] += 1
+
+    i = 0
+
+    for clr, freq in enumerate(cnt):
+      for _ in range(freq):
+        nums[i] = clr
+        i += 1
 
 
 # Test Case 1
