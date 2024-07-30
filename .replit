@@ -1,7 +1,7 @@
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
-entrypoint = "No_1598_Crawler_Log_Folder.py"
+entrypoint = "No_1653_Minimum_Deletions_to_Make_String_Balanced.py"
 # A list of globs that specify which files and directories should
 # be hidden in the workspace.
 hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
